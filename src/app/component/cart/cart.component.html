@@ -31,11 +31,12 @@
                             <td style="width: 25%;">{{item.description}}</td>
                             <th style="width: 12%;">{{item.price}}</th>
                             <td style="width: 12%;">{{item.quantity}}
-                            <button (click)="productQuantity('increase',item)" class="btn btn-primary btn-sm">
+                            <div><button (click)="productQuantity('increase',item)" class="btn btn-primary btn-sm">
                                 <i class="fa fa-plus"></i>
                             </button>
                             <button (click)="productQuantity('decrease',item)" class="btn btn-primary btn-sm">
                                 <i class="fa fa-minus"></i></button> 
+                                </div>
                             </td>
                             <td style="width: 12%;">{{item.total}}</td>
                             <td>
